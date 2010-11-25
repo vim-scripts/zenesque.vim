@@ -1,5 +1,5 @@
 " =============================================================================
-" File:        mini.vim
+" File:        zenesque.vim
 " Description: Vim color scheme file
 " Maintainer:  Paul Sampi;
 " =============================================================================
@@ -32,8 +32,8 @@ hi ModeMsg      guifg=White             guibg=#767676          gui=bold
 hi MoreMsg      guifg=#7c7c7c           guibg=bg               gui=bold
 hi NonText      guifg=#7e7e7e           guibg=bg               gui=bold
 
-hi Pmenu        guifg=#646564           guibg=#b1b2b1          gui=NONE
-hi PmenuSel     guifg=#a9a9aa           guibg=#f2f2f2          gui=bold
+hi Pmenu        guifg=#646564           guibg=#b1b2b1          gui=reverse
+hi PmenuSel     guifg=#a9a9aa           guibg=#f2f2f2          gui=bold,reverse
 hi PmenuSbar    guifg=White             guibg=#989898          gui=NONE
 hi PmenuThumb   guifg=White             guibg=#777777          gui=NONE
 
@@ -42,7 +42,7 @@ hi SignColumn   guifg=white             guibg=#c5c5c5          gui=NONE
 
 hi SpecialKey   guifg=white             guibg=ivory3           gui=NONE
 
-hi SpellBad     guisp=#323232                                  gui=bold,undercurl
+hi SpellBad     guisp=#323232           guibg=#d1cdcd          gui=undercurl
 hi SpellCap     guisp=#5d5d5d                                  gui=undercurl
 hi SpellLocal   guisp=#434343                                  gui=undercurl
 hi SpellRare    guisp=#7d7d7d                                  gui=undercurl
@@ -63,7 +63,7 @@ hi Constant     guifg=#353535          guibg=NONE      gui=bold
 hi String       guifg=#4d4d4d          guibg=NONE      gui=NONE
 hi Boolean      guifg=#616060          guibg=NONE      gui=underline
 hi Identifier   guifg=#141414          guibg=NONE      gui=bold
-hi Function     guifg=fg               guibg=NONE      gui=italic
+hi Function     guifg=fg               guibg=NONE      gui=bold,italic
 hi Statement    guifg=#474747          guibg=NONE      gui=bold
 hi Keyword      guifg=#666666	        guibg=NONE      gui=underline
 hi PreProc      guifg=#6b6b6b          guibg=NONE      gui=NONE

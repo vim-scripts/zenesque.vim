@@ -15,6 +15,7 @@ hi ColorColumn  guifg=NONE              guibg=#e6e6e6
 hi Cursor       guifg=bg                guibg=fg                gui=NONE
 hi CursorIM     guifg=bg                guibg=fg                gui=NONE
 hi lCursor      guifg=bg                guibg=fg                gui=NONE
+hi CursorLine   guifg=NONE              guibg=#e1e1d0           gui=NONE
 hi DiffAdd      guifg=NONE              guibg=#9d9d9d           gui=NONE
 hi DiffChange   guifg=NONE              guibg=#d1d1d1           gui=NONE
 hi DiffDelete   guifg=NONE              guibg=#d8d8d5           gui=NONE
@@ -26,7 +27,7 @@ hi Folded       guifg=#555555           guibg=#acacac           gui=italic
 
 hi IncSearch    guifg=black             guibg=#adadad          gui=NONE
 hi Search       guifg=black             guibg=#adadad          gui=NONE
-hi LineNr       guifg=#666677           guibg=NONE             gui=NONE
+hi LineNr       guifg=#a9a99e           guibg=NONE             gui=NONE
 hi MatchParen   guifg=black             guibg=#cccccc          gui=bold
 hi ModeMsg      guifg=White             guibg=#767676          gui=bold
 hi MoreMsg      guifg=#7c7c7c           guibg=bg               gui=bold
@@ -53,26 +54,26 @@ hi TabLineFill  guifg=fg                guibg=bg               gui=reverse
 hi TabLineSel   guifg=fg                guibg=bg               gui=bold
 hi Title        guifg=#6d6d6d           guibg=bg               gui=NONE
 hi VertSplit    guifg=#b9b9b9           guibg=#b9b9b9
-hi Visual       guifg=white             guibg=#7e7e7e          gui=NONE
+hi Visual       guifg=white             guibg=#9a9a9a          gui=NONE
 hi WarningMsg   guifg=#cfcfcf           guibg=#5b5b5b          gui=NONE
 hi WildMenu     guifg=Black             guibg=#c2c2c2          gui=NONE
 
 " -----------------------------------------------------------------------------
 hi Comment      guifg=#797979          guibg=NONE      gui=italic
 hi Constant     guifg=#353535          guibg=NONE      gui=bold
-hi String       guifg=#4d4d4d          guibg=NONE      gui=NONE
+hi String       guifg=#444444          guibg=NONE      gui=NONE
 hi Boolean      guifg=#616060          guibg=NONE      gui=underline
 hi Identifier   guifg=#141414          guibg=NONE      gui=bold
-hi Function     guifg=fg               guibg=NONE      gui=bold,italic
-hi Statement    guifg=#474747          guibg=NONE      gui=bold
-hi Keyword      guifg=#666666	        guibg=NONE      gui=underline
+hi Function     guifg=fg               guibg=NONE      gui=bold
+hi Statement    guifg=black            guibg=NONE      gui=NONE
+hi Keyword      guifg=#666666          guibg=NONE      gui=underline
 hi PreProc      guifg=#6b6b6b          guibg=NONE      gui=NONE
 hi Type         guifg=#616161          guibg=NONE      gui=bold,italic
 hi Special      guifg=#6e6e6e          guibg=NONE      gui=NONE
 hi Ignore       guifg=bg               guibg=NONE      gui=NONE
 hi Error        guifg=#727272          guibg=NONE      gui=undercurl
-hi Conditional  guifg=#4d4d4d	        guibg=white      gui=bold
-hi Todo         guifg=fg               guibg=NONE     gui=reverse
+hi Conditional  guifg=#4d4d4d          guibg=white     gui=bold
+hi Todo         guifg=bg               guibg=#898989   gui=bold
 " -----------------------------------------------------------------------------
 hi VimError         guifg=#b6b6b6      guibg=#313131   gui=bold
 hi VimCommentTitle  guifg=#5c5c5c      guibg=bg        gui=bold,italic
@@ -101,6 +102,47 @@ hi diffLine             guifg=#4e4e4e           guibg=NONE      gui=italic
 hi link diffSubname     diffLine
 hi link diffComment     Comment
 " -----------------------------------------------------------------------------
-hi htmlLink             guifg=#666666	        guibg=NONE      gui=underline,italic
-hi htmlTagName          guifg=NONE             guibg=white
-hi javaScript           guifg=fg               guibg=NONE
+hi htmlLink             guifg=#666666          guibg=NONE      gui=underline,italic
+hi htmlTagName          guifg=NONE             guibg=NONE      gui=NONE
+hi link htmlScriptTag htmlTagName
+hi link htmlTagN htmlTagName
+hi link htmlEndTag htmlTagName
+hi link htmlSpecialTagName htmlTagName
+
+hi link cssRenderAttr Constant 
+hi link cssTextAttr Constant
+hi link cssUIAttr Constant
+hi link cssTableAttr Constant
+hi link cssColorAttr Constant
+hi link cssBoxAttr Constant
+hi link cssCommonAttr Constant
+hi link cssFunctionName Constant
+hi link cssRenderProp Type
+hi link cssBoxProp cssRenderProp
+
+hi link cssTagName Statement
+hi link cssClassName cssTagName
+hi link cssIdentifier cssTagName
+hi link cssPseudoClass cssTagName
+hi link cssPseudoClassId cssTagName
+
+hi cssBraces            guifg=fg            guibg=bg              gui=NONE
+hi javaScript           guifg=fg            guibg=NONE
+hi link javaScriptFunction Statement
+hi link javaScriptMember Statement
+hi link javaScriptValue Constant
+
+hi link objcClass Type
+hi link cocoaClass objcClass
+hi link objcSubclass objcClass
+hi link objcSuperclass objcClass
+hi link cocoaFunction Function
+hi link objcMethodName Identifier
+hi link objcMethodArg Normal
+hi link objcMessageName Identifier
+
+hi link javaType Statement
+
+hi link cppStatement  Statement
+
+

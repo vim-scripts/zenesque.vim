@@ -10,12 +10,10 @@ if exists("syntax_on")
 endif
 let colors_name = "zenesque"
 " =============================================================================
-hi Normal       guifg=#000000           guibg=#e9e9dd           gui=NONE
 hi ColorColumn  guifg=NONE              guibg=#e6e6e6
 hi Cursor       guifg=bg                guibg=fg                gui=NONE
 hi CursorIM     guifg=bg                guibg=fg                gui=NONE
 hi lCursor      guifg=bg                guibg=fg                gui=NONE
-hi CursorLine   guifg=NONE              guibg=#e1e1d0           gui=NONE
 hi DiffAdd      guifg=NONE              guibg=#9d9d9d           gui=NONE
 hi DiffChange   guifg=NONE              guibg=#d1d1d1           gui=NONE
 hi DiffDelete   guifg=NONE              guibg=#d8d8d5           gui=NONE
@@ -27,14 +25,12 @@ hi Folded       guifg=#555555           guibg=#acacac           gui=italic
 
 hi IncSearch    guifg=black             guibg=#adadad          gui=NONE
 hi Search       guifg=black             guibg=#adadad          gui=NONE
-hi LineNr       guifg=#a9a99e           guibg=NONE             gui=NONE
 hi MatchParen   guifg=black             guibg=#cccccc          gui=bold
 hi ModeMsg      guifg=White             guibg=#767676          gui=bold
 hi MoreMsg      guifg=#7c7c7c           guibg=bg               gui=bold
 hi NonText      guifg=#7e7e7e           guibg=bg               gui=bold
 
 hi Pmenu        guifg=#646564           guibg=#b1b2b1          gui=reverse
-hi PmenuSel     guifg=#a9a9aa           guibg=#f2f2f2          gui=bold,reverse
 hi PmenuSbar    guifg=White             guibg=#989898          gui=NONE
 hi PmenuThumb   guifg=White             guibg=#777777          gui=NONE
 
@@ -59,21 +55,42 @@ hi WarningMsg   guifg=#cfcfcf           guibg=#5b5b5b          gui=NONE
 hi WildMenu     guifg=Black             guibg=#c2c2c2          gui=NONE
 
 " -----------------------------------------------------------------------------
+
+if exists('g:zenesque_colors') && g:zenesque_colors==1
+
+    hi CursorLine   guifg=NONE             guibg=#d4d4c0   gui=NONE
+    hi Normal       guifg=#000000          guibg=#dbdbd2   gui=NONE
+    hi LineNr       guifg=#888875          guibg=NONE      gui=NONE
+    hi Constant     guifg=#73221A          guibg=NONE      gui=NONE
+    hi String       guifg=#2c4c3b          guibg=NONE      gui=NONE
+    hi Function     guifg=#084166          guibg=NONE      gui=NONE
+    hi Statement    guifg=#412252          guibg=NONE      gui=NONE
+    hi Conditional  guifg=#54240b          guibg=NONE      gui=NONE
+    hi Type         guifg=#202969          guibg=NONE      gui=italic
+    hi Todo         guifg=#6c0303          guibg=NONE      gui=bold
+    hi PmenuSel     guifg=fg               guibg=#c37a23   gui=bold
+
+else
+    hi CursorLine   guifg=NONE             guibg=#e1e1d0   gui=NONE
+    hi Normal       guifg=#000000          guibg=#e9e9dd   gui=NONE
+    hi LineNr       guifg=#a9a99e          guibg=NONE      gui=NONE
+    hi Constant     guifg=#353535          guibg=NONE      gui=bold
+    hi Statement    guifg=black            guibg=NONE      gui=NONE
+    hi Function     guifg=fg               guibg=NONE      gui=bold
+    hi String       guifg=#3c3c3c          guibg=NONE      gui=NONE
+    hi Type         guifg=#616161          guibg=NONE      gui=bold,italic
+    hi Conditional  guifg=#4d4d4d          guibg=NONE      gui=bold
+    hi Todo         guifg=bg               guibg=#898989   gui=bold
+    hi PmenuSel     guifg=#a9a9aa          guibg=#f2f2f2   gui=bold,reverse
+endif
 hi Comment      guifg=#797979          guibg=NONE      gui=italic
-hi Constant     guifg=#353535          guibg=NONE      gui=bold
-hi String       guifg=#444444          guibg=NONE      gui=NONE
-hi Boolean      guifg=#616060          guibg=NONE      gui=underline
+hi Boolean      guifg=#616060          guibg=NONE      gui=bold
 hi Identifier   guifg=#141414          guibg=NONE      gui=bold
-hi Function     guifg=fg               guibg=NONE      gui=bold
-hi Statement    guifg=black            guibg=NONE      gui=NONE
 hi Keyword      guifg=#666666          guibg=NONE      gui=underline
 hi PreProc      guifg=#6b6b6b          guibg=NONE      gui=NONE
-hi Type         guifg=#616161          guibg=NONE      gui=bold,italic
 hi Special      guifg=#6e6e6e          guibg=NONE      gui=NONE
 hi Ignore       guifg=bg               guibg=NONE      gui=NONE
 hi Error        guifg=#727272          guibg=NONE      gui=undercurl
-hi Conditional  guifg=#4d4d4d          guibg=white     gui=bold
-hi Todo         guifg=bg               guibg=#898989   gui=bold
 " -----------------------------------------------------------------------------
 hi VimError         guifg=#b6b6b6      guibg=#313131   gui=bold
 hi VimCommentTitle  guifg=#5c5c5c      guibg=bg        gui=bold,italic

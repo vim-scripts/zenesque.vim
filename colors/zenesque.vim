@@ -21,11 +21,11 @@ hi DiffText     guifg=black             guibg=#bababa           gui=NONE
 hi Directory    guifg=#525252           guibg=bg                gui=NONE
 hi ErrorMsg     guifg=#6f6f6f           guibg=NONE              gui=NONE
 hi FoldColumn   guifg=#555555           guibg=#cccbcb           gui=bold
-hi Folded       guifg=#555555           guibg=#acacac           gui=italic
+hi Folded       guifg=#555555           guibg=#cccccc           gui=italic
 
 hi IncSearch    guifg=black             guibg=#adadad          gui=NONE
 hi Search       guifg=black             guibg=#adadad          gui=NONE
-hi MatchParen   guifg=black             guibg=#cccccc          gui=bold
+hi MatchParen   guifg=black             guibg=#a8a8a8          gui=bold
 hi ModeMsg      guifg=White             guibg=#767676          gui=bold
 hi MoreMsg      guifg=#7c7c7c           guibg=bg               gui=bold
 hi NonText      guifg=#7e7e7e           guibg=bg               gui=bold
@@ -48,7 +48,7 @@ hi StatusLineNC guifg=#808080           guibg=#bbbbbb          gui=italic
 hi TabLine      guifg=fg                guibg=LightGrey        gui=underline
 hi TabLineFill  guifg=fg                guibg=bg               gui=reverse
 hi TabLineSel   guifg=fg                guibg=bg               gui=bold
-hi Title        guifg=#6d6d6d           guibg=bg               gui=NONE
+hi Title        guifg=#6d6d6d           guibg=bg               gui=bold
 hi VertSplit    guifg=#b9b9b9           guibg=#b9b9b9
 hi Visual       guifg=white             guibg=#9a9a9a          gui=NONE
 hi WarningMsg   guifg=#cfcfcf           guibg=#5b5b5b          gui=NONE
@@ -58,32 +58,33 @@ hi WildMenu     guifg=Black             guibg=#c2c2c2          gui=NONE
 
 if exists('g:zenesque_colors') && g:zenesque_colors==1
 
+    hi Normal       guifg=#0b092c          guibg=#e6e6d3   gui=NONE
     hi CursorLine   guifg=NONE             guibg=#d4d4c0   gui=NONE
-    hi Normal       guifg=#000000          guibg=#dbdbd2   gui=NONE
     hi LineNr       guifg=#888875          guibg=NONE      gui=NONE
     hi Constant     guifg=#73221A          guibg=NONE      gui=NONE
-    hi String       guifg=#2c4c3b          guibg=NONE      gui=NONE
-    hi Function     guifg=#084166          guibg=NONE      gui=NONE
-    hi Statement    guifg=#412252          guibg=NONE      gui=NONE
-    hi Conditional  guifg=#54240b          guibg=NONE      gui=NONE
-    hi Type         guifg=#202969          guibg=NONE      gui=italic
-    hi Todo         guifg=#6c0303          guibg=NONE      gui=bold
+    hi String       guifg=#15401f          guibg=NONE      gui=NONE
+    hi Function     guifg=#294657          guibg=NONE      gui=bold
+    hi Statement    guifg=#240535          guibg=NONE      gui=italic
+    hi Conditional  guifg=#6e220e          guibg=NONE      gui=NONE
+    hi Type         guifg=#421b4d          guibg=NONE      gui=italic
+    hi Todo         guifg=#6c0303          guibg=NONE      gui=NONE
+    hi Comment      guifg=#6e6e6e          guibg=NONE      gui=italic
     hi PmenuSel     guifg=fg               guibg=#c37a23   gui=bold
 
 else
-    hi CursorLine   guifg=NONE             guibg=#e1e1d0   gui=NONE
     hi Normal       guifg=#000000          guibg=#e9e9dd   gui=NONE
+    hi CursorLine   guifg=NONE             guibg=#e1e1d0   gui=NONE
     hi LineNr       guifg=#a9a99e          guibg=NONE      gui=NONE
     hi Constant     guifg=#353535          guibg=NONE      gui=bold
-    hi Statement    guifg=black            guibg=NONE      gui=NONE
+    hi Statement    guifg=#363636          guibg=NONE      gui=italic
     hi Function     guifg=fg               guibg=NONE      gui=bold
     hi String       guifg=#3c3c3c          guibg=NONE      gui=NONE
     hi Type         guifg=#616161          guibg=NONE      gui=bold,italic
     hi Conditional  guifg=#4d4d4d          guibg=NONE      gui=bold
-    hi Todo         guifg=bg               guibg=#898989   gui=bold
-    hi PmenuSel     guifg=#a9a9aa          guibg=#f2f2f2   gui=bold,reverse
+    hi Todo         guifg=fg               guibg=NONE      gui=bold,underline
+    hi Comment      guifg=#797979          guibg=NONE      gui=italic
+    hi PmenuSel     guifg=fg               guibg=#a9a9aa   gui=bold
 endif
-hi Comment      guifg=#797979          guibg=NONE      gui=italic
 hi Boolean      guifg=#616060          guibg=NONE      gui=bold
 hi Identifier   guifg=#141414          guibg=NONE      gui=bold
 hi Keyword      guifg=#666666          guibg=NONE      gui=underline
@@ -159,7 +160,6 @@ hi link objcMethodArg Normal
 hi link objcMessageName Identifier
 
 hi link javaType Statement
-
 hi link cppStatement  Statement
 
 

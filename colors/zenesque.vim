@@ -95,9 +95,9 @@ hi Error        guifg=#727272          guibg=NONE      gui=undercurl
 " -----------------------------------------------------------------------------
 hi VimError         guifg=#b6b6b6      guibg=#313131   gui=bold
 hi VimCommentTitle  guifg=#5c5c5c      guibg=bg        gui=bold,italic
-hi qfFileName       guifg=#dedede      guibg=NONE      gui=italic
-hi qfLineNr         guifg=#b4b4b4      guibg=NONE      gui=bold
-hi qfError          guifg=#8e8e8e      guibg=NONE      gui=bold
+hi qfFileName       guifg=#6a6a6a      guibg=NONE      gui=italic
+hi qfLineNr         guifg=fg           guibg=NONE      gui=NONE
+hi qfError          guifg=fg           guibg=#c4c2c2   gui=undercurl
 
 " -----------------------------------------------------------------------------
 hi pythonDecorator  guifg=#3b3b3b      guibg=NONE      gui=bold

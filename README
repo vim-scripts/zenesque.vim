@@ -2,10 +2,22 @@ This is a mirror of http://www.vim.org/scripts/script.php?script_id=3340
 
 Almost colorless(shades of grey), light minimalistic color scheme.  Designed for reading for long periods. Inspired by Mini.
 
-Screenshot:
-http://www.flickr.com/photos/28853165@N05/5210097763/
+NEW: Now with options for dark background
 
-with color highlighting:
-http://www.flickr.com/photos/28853165@N05/5223309987/
+Screenshots:
 
+LIGHT GROUP:
+no colors (default):
+http://www.flickr.com/photos/28853165@N05/5246095508/
+
+with colors:
+http://www.flickr.com/photos/28853165@N05/5246095888/
+
+DARK GROUP:
+
+no colors:
+http://www.flickr.com/photos/28853165@N05/5246096772/
+
+with colors:
+http://www.flickr.com/photos/28853165@N05/5246089194/
 Note: GUI only version (for now)

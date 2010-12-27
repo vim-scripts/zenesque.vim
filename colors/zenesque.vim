@@ -15,6 +15,7 @@ let colors_name = "zenesque"
 
 hi Normal       guifg=#000000          guibg=#e0e0d8   gui=NONE
 hi CursorLine   guifg=NONE             guibg=#e1e1d0   gui=NONE
+hi CursorColumn guifg=NONE             guibg=#e1e1d0   gui=NONE
 hi LineNr       guifg=#a9a99e          guibg=NONE      gui=NONE
 hi Constant     guifg=#353535          guibg=NONE      gui=bold
 hi Statement    guifg=#363636          guibg=NONE      gui=italic
@@ -95,6 +96,7 @@ if exists('g:zenesque_colors') && g:zenesque_colors==1
     
     hi Normal       guifg=#0b092c          guibg=#e5e5d8   gui=NONE
     hi CursorLine   guifg=NONE             guibg=#d4d4c0   gui=NONE
+    hi CursorColumn guifg=NONE             guibg=#d4d4c0   gui=NONE
     hi LineNr       guifg=#888875          guibg=NONE      gui=NONE
     hi Constant     guifg=#73221A          guibg=NONE      gui=NONE
     hi String       guifg=#073010          guibg=NONE      gui=NONE
@@ -176,10 +178,11 @@ elseif exists('g:zenesque_colors') && g:zenesque_colors==2
 
     hi Normal       guifg=#adadad          guibg=#1a1a1a   gui=NONE
     hi CursorLine   guifg=NONE             guibg=#000000   gui=NONE
+    hi CursorColumn guifg=NONE             guibg=#000000   gui=NONE
     hi LineNr       guifg=#555555          guibg=NONE      gui=NONE
     hi Constant     guifg=#848484          guibg=NONE      gui=bold
     hi Statement    guifg=#a6a6a6          guibg=NONE      gui=italic
-    hi Function     guifg=#c4c3c3          guibg=NONE      gui=NONE
+    hi Function     guifg=#919191          guibg=NONE      gui=bold
     hi String       guifg=#838383          guibg=NONE      gui=italic
     hi Type         guifg=#838383          guibg=NONE      gui=bold,italic
     hi Conditional  guifg=#787878          guibg=NONE      gui=bold
@@ -260,6 +263,7 @@ elseif exists('g:zenesque_colors') && g:zenesque_colors==3
 
     hi Normal       guifg=#adadad          guibg=#0f1216   gui=NONE
     hi CursorLine   guifg=NONE             guibg=#000000   gui=NONE
+    hi CursorColumn guifg=NONE             guibg=#000000   gui=NONE
     hi LineNr       guifg=#4d4d44          guibg=NONE      gui=NONE
     hi Constant     guifg=#8d5c57          guibg=NONE      gui=NONE
     hi String       guifg=#5d7a64          guibg=NONE      gui=NONE

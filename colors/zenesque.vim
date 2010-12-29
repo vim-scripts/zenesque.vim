@@ -208,8 +208,8 @@ elseif exists('g:zenesque_colors') && g:zenesque_colors==2
 
     hi Directory    guifg=#525252          guibg=bg        gui=NONE
     hi ErrorMsg     guifg=#6f6f6f          guibg=NONE      gui=NONE
-    hi FoldColumn   guifg=#55555           guibg=#414141   gui=bold
-    hi Folded       guifg=#82822           guibg=#212121   gui=italic
+    hi FoldColumn   guifg=#555555           guibg=#414141   gui=bold
+    hi Folded       guifg=#828282           guibg=#212121   gui=italic
 
     hi IncSearch    guifg=#000000          guibg=#adadad   gui=NONE
     hi Search       guifg=#000000          guibg=#c5c3c3   gui=NONE
